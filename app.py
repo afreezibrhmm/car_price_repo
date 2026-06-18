@@ -115,7 +115,7 @@ def load_production_model():
 try:
     model_pipeline = load_production_model()
 except Exception as e:
-    st.error("⚠️ Error: 'car_price_model.pkl' not found in the working directory. Please train the model script first.")
+    st.error(f"⚠️ Model Loading Failed. The actual error is: {e}")
     st.stop()
 
 # ------------------------------
